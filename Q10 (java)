@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double relo;
+        
+        String rlg;
+   
+        
+        rlg=JOptionPane.showInputDialog(null, "Que horas são?: ");
+        
+       
+        
+        relo = Double.parseDouble(rlg);
+        
+      if (relo >= 24)
+      
+       {JOptionPane.showMessageDialog(null, "O relogio vai até 24 horas!");}
+              if (relo == 7 || relo == 8 || relo == 9 || relo == 10)
+      
+       {JOptionPane.showMessageDialog(null, "Bom dia! São " + relo +" horas.");} else {JOptionPane.showMessageDialog(null, "São " + relo +" horas.");}
+       
+      if (relo >= 24)
+      
+       {JOptionPane.showMessageDialog(null, "O relogio vai até 24 horas!");}
+       
+       
+    }
+}
+    
