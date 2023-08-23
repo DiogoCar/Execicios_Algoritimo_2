@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double b1,b2,bb,h,ar;
+        
+        String bs1,bs2,hlt;
+   
+        
+        bs1=JOptionPane.showInputDialog(null, "Digite a base: ");
+        bs2=JOptionPane.showInputDialog(null, "Digite a base: ");
+        hlt=JOptionPane.showInputDialog(null, "Digite a altura: ");
+       
+        
+        b1 = Double.parseDouble(bs1);
+        b2 = Double.parseDouble(bs2);
+        h = Double.parseDouble(hlt);
+        
+      bb= b1 + b2;
+      ar= bb * h/2;
+       
+      JOptionPane.showMessageDialog(null, "Sua area é: " + ar);
+       
+    }
+}
