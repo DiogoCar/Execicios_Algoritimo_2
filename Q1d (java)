@@ -23,7 +23,7 @@ public class Exercicio_fix {
         String raio;
    
         
-        raio=JOptionPane.showInputDialog(null, "Digite a base: ");
+        raio=JOptionPane.showInputDialog(null, "Digite o raio: ");
      
         r = Double.parseDouble(raio);
        
