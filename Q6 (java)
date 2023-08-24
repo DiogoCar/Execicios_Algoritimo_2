@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+import java.lang.Math;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double a,b,b2,c,delt,bas1,bas2,raz;
+        
+        String va,vb,vc;
+   
+        
+        va =JOptionPane.showInputDialog(null, "Digite o valor de A: ");
+        vb =JOptionPane.showInputDialog(null, "Digite o valor de B: ");
+        vc =JOptionPane.showInputDialog(null, "Digite o valor de C: "); 
+        
+        a = Double.parseDouble(va);
+        b = Double.parseDouble(vb);
+        c = Double.parseDouble(vc);
+        
+b2= b*b ;
+delt= b2-4*a*c ;
+raz= Math.sqrt(delt);
+bas1= -b + raz /2*a;
+bas2= -b - raz /2*a;
+        
+      JOptionPane.showMessageDialog(null, "resultado: " + bas1 + " & " + bas2);
+       
+    }
+}
+       
+      
