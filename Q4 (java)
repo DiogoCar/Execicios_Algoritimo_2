@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double p,h,h2,imc;
+        
+        String peso,alt;
+   
+        
+        peso =JOptionPane.showInputDialog(null, "Digite o peso: ");
+        alt =JOptionPane.showInputDialog(null, "Digite a altura: ");
+         
+        p = Double.parseDouble(peso);
+        h = Double.parseDouble(alt);
+        
+          h2= h*h;
+          imc= p*h2;
+          
+      JOptionPane.showMessageDialog(null, "Seu IMC é: " + imc);
+       
+    }
+}
+       
