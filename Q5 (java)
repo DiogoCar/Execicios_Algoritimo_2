@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double prod,imp,luc,luc1,luc2,res;
+        
+        String bruto,impos,lucro;
+   
+        
+        bruto =JOptionPane.showInputDialog(null, "Digite o preço bruto: ");
+        impos =JOptionPane.showInputDialog(null, "Digite o valor dos impostos: ");
+        lucro =JOptionPane.showInputDialog(null, "Digite o valor da margem de lucro em %: "); 
+        
+        prod = Double.parseDouble(bruto);
+        imp = Double.parseDouble(impos);
+        luc = Double.parseDouble(lucro);
+        
+        luc1= luc*prod;
+        luc2= luc1/100;
+        res= prod+imp+luc2;
+        
+      JOptionPane.showMessageDialog(null, "Valor total: " + res);
+       
+    }
+}
