@@ -2,7 +2,7 @@ programa {
   inclua biblioteca Matematica --> mat
   funcao inicio() {
 
-real a,b,b2,c,delt,raz
+real a,b,b2,c,delt,bas1,bas2,raz
 
 
    escreva ("Digite o valor de A:")
@@ -16,10 +16,12 @@ real a,b,b2,c,delt,raz
 
 b2= b*b 
 delt= b2-4*a*c 
-
 raz= mat.raiz (delt,2)
+bas1= -b + raz /2*a
+bas2= -b - raz /2*a
 
-escreva ("Sua raiz é: " + raz)
+
+escreva ("Sua raiz Ã©: " + bas1 + " & " +bas2)
 
 
 
