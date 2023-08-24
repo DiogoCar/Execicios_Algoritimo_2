@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Exercicio_fix {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    
+    double sal,por,por2,inss;
+        
+        String salario;
+   
+        
+        salario =JOptionPane.showInputDialog(null, "Digite o salario: ");
+    
+        
+        sal = Double.parseDouble(salario);
+        
+        
+       por = 14 * sal;
+       por2 = por/100;
+       inss = sal - por2;
+       
+      JOptionPane.showMessageDialog(null, "Seu desconto do INSS é: " + inss);
+       
+    }
+}
